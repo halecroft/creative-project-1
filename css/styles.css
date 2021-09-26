@@ -108,14 +108,14 @@ footer {
     background-color: #b88e3f;
     color: #f8ede5 !important;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 3.0rem;
     text-decoration: none;
     text-align: center;
     position: relative;
     top: -1.15rem;
-    height: 2.5rem;
+    height: 3.5rem;
     width: 9rem;
-    padding: 0.3rem;
+    padding: auto;
 }
 
 .link-button:visited {
@@ -128,11 +128,17 @@ footer {
     border-radius: 6px;
     padding: 1.5rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .exposition p {
     font-size: 1.5rem;
     text-align: justify;
+}
+
+.exposition a {
+    color: #212529;
 }
 
 @media (max-width:767px) {
@@ -163,6 +169,11 @@ footer {
         flex-direction: column;
         width: 100%;
         align-items: center;
+    }
+
+    .centered-fixed {
+        width: 90%;
+        justify-content: center;
     }
 }
 
@@ -206,5 +217,16 @@ footer {
 
     .exposition {
         height: 100%;
+    }
+
+    .centered-fixed {
+        display: flex;
+        width: 75%;
+        justify-content: center;
+    }
+
+    .centered-fixed img {
+        width: 40%;
+        margin: 2rem;
     }
 }
